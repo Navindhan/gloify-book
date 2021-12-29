@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Users</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="input-container">
+		<h2><span>Login</span>/<span>Sign Up</span></h2>
+		<input type="text" placeholder="User name">
+		<!-- <input type="text" placeholder="Phone number"> -->
+		<input type="text" placeholder="password">
+		<!-- <input type="text" placeholder="Re-enter password"> -->
+		<button>Login</button>
+	</div>
+</body>
+<script type="text/javascript">
+	var incont = document.querySelector('input-container');
+	var span = document.querySelectorAll('input-container h2 span');
+	
+	for(let i=0;i<span.length;i++){
+		span[i].addEventListener('click',function(){
+			if(this.innerText=="Login"){
+				this.style.fontSize='20px';
+			}
+			else if(this.innerText=="Sign Up"){
+				this.style.fontSize='20px';
+			}
+		})
+	}
+
+</script>
+</html>
